@@ -1,4 +1,3 @@
-// frontend/src/components/Navbar.jsx
 
 import React from 'react';
 import { useAuth } from './AuthContext';
@@ -10,7 +9,7 @@ const Navbar = () => {
 
   const handleLogout = () => {
     auth.logout();
-    navigate('/'); // Redirect to login page after logout
+    navigate('/');
   };
 
   return (
