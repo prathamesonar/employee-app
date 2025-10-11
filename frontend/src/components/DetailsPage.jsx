@@ -1,4 +1,3 @@
-// frontend/src/components/DetailsPage.jsx
 
 import React from 'react';
 import { useLocation, useNavigate, Link } from 'react-router-dom';
@@ -17,14 +16,11 @@ const DetailsPage = () => {
     );
   }
 
-  // --- FIX IS HERE: Improved function to parse the salary string ---
   const parseSalary = (salaryStr) => {
     if (typeof salaryStr !== 'string') return 0;
-    // Use a regular expression to remove ALL non-digit characters
     const numericStr = salaryStr.replace(/[^\d.-]/g, '');
     return parseInt(numericStr, 10);
   };
-  // --- END OF FIX ---
 
   return (
     <div className="page-container details-container">
