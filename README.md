@@ -66,7 +66,7 @@ A comprehensive, multi-screen React application designed to display and manage e
 * **React Router** (Client-Side Routing)
 * **Axios** (API Requests)
 * **Recharts** (Charting Library)
-* **React Leaflet** & **@changey/react-leaflet-markercluster** (Interactive Maps)
+* **React Leaflet**  (Interactive Maps)
 * **React Webcam** (Camera Access)
 * **CSS3** (Custom Styling)
 
@@ -90,7 +90,7 @@ To run this project on your local machine, follow these steps:
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git](https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git)
+    git clone https://github.com/prathamesonar/employee-app.git
     cd YOUR_REPOSITORY
     ```
 
