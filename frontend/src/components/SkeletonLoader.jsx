@@ -1,4 +1,3 @@
-// frontend/src/components/SkeletonLoader.jsx
 
 import React from 'react';
 
