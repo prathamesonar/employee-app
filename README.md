@@ -91,7 +91,8 @@ To run this project on your local machine, follow these steps:
 1.  **Clone the repository:**
     ```bash
     git clone https://github.com/prathamesonar/employee-app.git
-    cd YOUR_REPOSITORY
+    cd employee-app
+
     ```
 
 2.  **Setup the Backend:**
