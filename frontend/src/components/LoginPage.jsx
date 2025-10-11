@@ -1,4 +1,3 @@
-// src/components/LoginPage.js
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from './AuthContext';
@@ -12,7 +11,6 @@ const LoginPage = () => {
 
   const handleLogin = (e) => {
     e.preventDefault();
-    // Credentials for frontend validation
     if (username === 'testuser' && password === 'Test123') {
       auth.login({ username });
       navigate('/list');
