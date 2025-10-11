@@ -1,4 +1,3 @@
-// frontend/src/App.jsx
 
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
@@ -12,14 +11,12 @@ import MapPage from './components/MapPage';
 import CameraPage from './components/CameraPage';
 import PhotoResultPage from './components/PhotoResultPage';
 import ProtectedRoute from './components/ProtectedRoute';
-import PieChartPage from './components/PieChartPage'; // Import new page
-import Navbar from './components/Navbar'; // Import Navbar
+import PieChartPage from './components/PieChartPage'; 
+import Navbar from './components/Navbar'; 
 
 import './App.css';
 import 'leaflet/dist/leaflet.css';
-// import 'react-leaflet-cluster/lib/styles.scss';
 
-// Layout for pages that should have the Navbar
 const ProtectedLayout = ({ children }) => {
   return (
     <>
