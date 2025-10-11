@@ -1,4 +1,3 @@
-// src/components/CameraPage.js
 import React, { useRef, useCallback } from 'react';
 import Webcam from 'react-webcam';
 import { useNavigate } from 'react-router-dom';
@@ -8,10 +7,8 @@ const CameraPage = () => {
   const navigate = useNavigate();
 
   const capture = useCallback(() => {
-    // getScreenshot returns a base64 encoded image string
     const imageSrc = webcamRef.current.getScreenshot();
     if (imageSrc) {
-      // Pass the captured image to the photo result page
       navigate('/photo', { state: { image: imageSrc } });
     }
   }, [webcamRef, navigate]);
