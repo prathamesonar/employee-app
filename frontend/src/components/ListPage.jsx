@@ -1,4 +1,3 @@
-// frontend/src/components/ListPage.jsx
 
 import React, { useState, useEffect, useMemo } from 'react';
 import axios from 'axios';
@@ -13,7 +12,6 @@ const ListPage = () => {
   const [error, setError] = useState('');
   const navigate = useNavigate();
 
-  // New state for table controls
   const [searchTerm, setSearchTerm] = useState('');
   const [sortConfig, setSortConfig] = useState({ key: 1, direction: 'ascending' });
   const [currentPage, setCurrentPage] = useState(1);
@@ -39,7 +37,6 @@ const ListPage = () => {
     fetchData();
   }, []);
 
-  // Memoized calculation for filtering and sorting
   const filteredAndSortedEmployees = useMemo(() => {
     let sortableItems = [...employees];
 
@@ -116,7 +113,6 @@ const ListPage = () => {
         </thead>
         <tbody>
           {loading ? (
-            // Skeleton Loader
             Array.from({ length: 5 }).map((_, index) => <SkeletonLoader key={index} />)
           ) : (
             currentItems.map((emp, index) => (
