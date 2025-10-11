@@ -2,7 +2,7 @@
 
 A comprehensive, multi-screen React application designed to display and manage employee data. This project was built to demonstrate core and advanced React concepts, including authentication, API integration, data visualization, and modern UI/UX patterns.
 
->### ✨ **[Live Demo on Vercel](https://employee-psi-self.vercel.app/)** ✨
+>###  **[Live Demo on Vercel](https://employee-psi-self.vercel.app/)** 
 >
 >**Backend deployed on Render:** `https://my-employee-app-backend.onrender.com`
 
@@ -16,26 +16,23 @@ A comprehensive, multi-screen React application designed to display and manage e
     <td align="center"><strong>Employee List (with Controls)</strong></td>
   </tr>
   <tr>
-    <td><img src="URL_TO_YOUR_SCREENSHOT" alt="Login Page Screenshot" width="400"/></td>
-    <td><img src="URL_TO_YOUR_SCREENSHOT" alt="Employee List Screenshot" width="400"/></td>
+    <td><img src="https://github.com/user-attachments/assets/99eaceba-ac09-485f-bbeb-b503a11643bd" alt="Login Page Screenshot" width="400"/></td>
+    <td><img src="https://github.com/user-attachments/assets/4a85a3f0-f489-4e33-87a7-b7de14acb658" alt="Employee List Screenshot" width="400"/></td>
   </tr>
   <tr>
     <td align="center"><strong>City Distribution Pie Chart</strong></td>
     <td align="center"><strong>Interactive City Map</strong></td>
   </tr>
   <tr>
-    <td><img src="URL_TO_YOUR_SCREENSHOT" alt="Pie Chart Screenshot" width="400"/></td>
-    <td><img src="URL_TO_YOUR_SCREENSHOT" alt="Map Screenshot" width="400"/></td>
+    <td><img src="https://github.com/user-attachments/assets/52d0f4d3-b76d-4f01-b8e3-318d9191b5d4" alt="Pie Chart Screenshot" width="400"/></td>
+    <td><img src="https://github.com/user-attachments/assets/bd266cf4-b0d3-466b-8d8f-9bcbc1a62c29T" alt="Map Screenshot" width="400"/></td>
   </tr>
 </table>
 
-*(To add screenshots: Upload your screenshot images to a folder in your GitHub repo, then replace "URL_TO_YOUR_SCREENSHOT" with the direct link to each image.)*
 
 ---
 
-## 🚀 Features
-
-This application is packed with features that showcase a wide range of web development skills:
+##  Features
 
 ### Core Features
 * **User Authentication:** Secure login page with client-side validation.
@@ -45,7 +42,7 @@ This application is packed with features that showcase a wide range of web devel
 * **REST API Integration:** Fetches data from an external REST API via a custom Node.js/Express backend proxy.
 * **Camera & Photo Capture:** Allows users to capture and display a photo using their device's camera.
 
-### Creative & Advanced Features
+### Advanced Features
 * **Advanced Table Controls:**
     * **Live Search:** Filter the employee list in real-time.
     * **Dynamic Sorting:** Sort the table by clicking on column headers.
