@@ -1,4 +1,3 @@
-// frontend/src/components/BarChartPage.jsx
 
 import React from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
@@ -18,9 +17,7 @@ const BarChartPage = () => {
     );
   }
   
-  // --- FIX IS HERE: Improved logic to parse the salary string ---
   const chartData = employees.slice(0, 10).map(emp => {
-    // Use a regular expression to remove ALL non-digit characters
     const salaryStr = emp[5] || '0';
     const numericSalary = parseInt(salaryStr.replace(/[^\d.-]/g, ''), 10);
     
@@ -29,7 +26,6 @@ const BarChartPage = () => {
       salary: numericSalary
     };
   });
-  // --- END OF FIX ---
 
   return (
     <div className="page-container chart-container">
