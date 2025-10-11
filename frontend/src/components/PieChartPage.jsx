@@ -1,10 +1,8 @@
-// frontend/src/components/PieChartPage.jsx
 
 import React, { useMemo } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { PieChart, Pie, Cell, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 
-// Generate some colors for the pie chart slices
 const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042', '#AF19FF', '#FF1943', '#19D4FF'];
 
 const PieChartPage = () => {
@@ -12,18 +10,15 @@ const PieChartPage = () => {
   const navigate = useNavigate();
   const { employees } = location.state || {};
 
-  // useMemo will prevent recalculating this on every render
   const cityData = useMemo(() => {
     if (!employees) return [];
 
-    // Count employees in each city
     const cityCounts = employees.reduce((acc, emp) => {
       const city = emp[2]; // City is at index 2
       acc[city] = (acc[city] || 0) + 1;
       return acc;
     }, {});
 
-    // Format for Recharts: [{ name: 'City', value: count }]
     return Object.keys(cityCounts).map(city => ({
       name: city,
       value: cityCounts[city],
