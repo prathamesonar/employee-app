@@ -1,0 +1,263 @@
+/* src/App.css */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  background-color: #f4f7f6;
+  margin: 0;
+  padding: 20px;
+  color: #333;
+}
+
+.App {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* --- Containers --- */
+.page-container {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.login-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* --- Forms & Buttons --- */
+h1, h2 {
+  color: #2c3e50;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button {
+  width: 100%;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #3498db;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+button.secondary {
+  background-color: #bdc3c7;
+}
+
+button.secondary:hover {
+  background-color: #95a5a6;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+.action-buttons button {
+  width: auto;
+  padding: 0.75rem 1.5rem;
+}
+
+/* --- Tables --- */
+.employee-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.employee-table th, .employee-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+.employee-table thead {
+  background-color: #ecf0f1;
+}
+
+.employee-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.employee-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* --- Specific Components --- */
+.details-card {
+  background-color: #f9f9f9;
+  border-left: 5px solid #3498db;
+  padding: 1.5rem;
+  margin: 2rem 0;
+}
+
+.details-card p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.camera-container, .photo-result-container {
+  text-align: center;
+}
+
+.webcam {
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  margin-bottom: 1rem;
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+}
+
+.captured-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.chart-container, .map-container {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.map-container .leaflet-container {
+    border-radius: 8px;
+}
+
+.loading {
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 50px;
+}
+
+.error-message {
+  color: #e74c3c;
+  text-align: center;
+  margin-top: 1rem;
+}
+.navbar {
+  background-color: #2c3e50;
+  padding: 1rem 2rem;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.logout-button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  width: auto; /* Override default button width */
+}
+
+.logout-button:hover {
+  background-color: #c0392b;
+}
+
+/* Search and Pagination Styles */
+.search-container {
+  margin-bottom: 1rem;
+  text-align: right;
+}
+
+.search-input {
+  padding: 0.75rem;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.5rem;
+  gap: 1rem;
+}
+
+.pagination button {
+  width: auto;
+  padding: 0.5rem 1rem;
+}
+
+.pagination button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Sortable Table Header */
+.employee-table thead th {
+  cursor: pointer;
+  user-select: none;
+}
+.employee-table thead th:hover {
+  background-color: #dfe6e9;
+}
+
+
+/* Skeleton Loader Styles */
+@keyframes shimmer {
+  0% { background-position: -1000px 0; }
+  100% { background-position: 1000px 0; }
+}
+
+.skeleton-line {
+  width: 100%;
+  height: 20px;
+  border-radius: 4px;
+  background-color: #f0f0f0;
+  background-image: linear-gradient(to right, #f0f0f0 0%, #e0e0e0 20%, #f0f0f0 40%, #f0f0f0 100%);
+  background-repeat: no-repeat;
+  background-size: 2000px 104px;
+  animation: shimmer 1.5s linear infinite;
+}
+
+.skeleton-row td {
+  padding: 12px;
+}
