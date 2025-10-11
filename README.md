@@ -1,4 +1,4 @@
-# React Employee Dashboard 📊
+# Employee Dashboard 
 
 A comprehensive, multi-screen React application designed to display and manage employee data. This project was built to demonstrate core and advanced React concepts, including authentication, API integration, data visualization, and modern UI/UX patterns.
 
@@ -25,7 +25,7 @@ A comprehensive, multi-screen React application designed to display and manage e
   </tr>
   <tr>
     <td><img src="https://github.com/user-attachments/assets/52d0f4d3-b76d-4f01-b8e3-318d9191b5d4" alt="Pie Chart Screenshot" width="400"/></td>
-    <td><img src="https://github.com/user-attachments/assets/bd266cf4-b0d3-466b-8d8f-9bcbc1a62c29T" alt="Map Screenshot" width="400"/></td>
+    <td><img src="https://github.com/user-attachments/assets/93a31b35-7c87-404e-8980-70ba478cd9f7" alt="Map Screenshot" width="400"/></td>
   </tr>
 </table>
 
